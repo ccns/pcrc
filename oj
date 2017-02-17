@@ -1,0 +1,4 @@
+#!/bin/bash
+EXEC=${1:-./a.out}
+echo $EXEC
+cat input | $EXEC > output
