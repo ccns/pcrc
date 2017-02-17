@@ -15,9 +15,9 @@ func! Run()
   exec "!g++ -Wall % -o %<"
   exec "!./%<"
 endfunc
-map <F5> :call RunOJ()<CR>
-func! RunOJ()
+map <F5> :call RunTest()<CR>
+func! RunTest()
   exec "w"
   exec "!g++ -Wall % -o %<"
-  exec "!oj %<"
+  exec "cat input | %< > output"
 endfunc
