@@ -19,5 +19,5 @@ map <F5> :call RunTest()<CR>
 func! RunTest()
   exec "w"
   exec "!g++ -Wall % -o %<"
-  exec "cat input | %< > output"
+  exec "cat input | ./%< > output"
 endfunc
