@@ -1,12 +1,9 @@
 syntax on
-se cin
-se nu
-se ts=4
-se sw=4
-se bg=dark
+se cin nu si ai ts=4 sw=4 bg=dark
 
 inoremap jk <Esc>
 nnoremap <Space> :w<CR>
+inoremap <buffer> {<CR> {<CR><END><CR>}<UP><END>
 
 map <C-A> ggVG"+y
 map <F6> :call Run()<CR>
