@@ -1,2 +1,2 @@
-# acmrc
-ACM Start files
+# pcrc
+Programming contest light resource configuration for vim
